@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C++ Projects | Nayab</title>
+  <style>
+    body { font-family: Arial; background: #f7f7f7; padding: 20px; }
+    h1, h2 { color: #2d2d2d; }
+    .project { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    pre { background: #eee; padding: 10px; overflow-x: auto; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>👩‍💻 Nayab's C++ Programming Portfolio</h1>
+
+  <div class="project">
+    <h2>🔹 Project: Smart Parking System</h2>
+    <p>A program to manage parking slots using OOP in C++.</p>
+    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Parking {
+  int slots;
+public:
+  Parking(int s) { slots = s; }
+  void park() {
+    if(slots > 0) {
+      slots--;
+      cout &lt;&lt; "Car parked. Slots left: " &lt;&lt; slots &lt;&lt; endl;
+    } else {
+      cout &lt;&lt; "Parking full!" &lt;&lt; endl;
+    }
+  }
+};
+
+int main() {
+  Parking lot(3);
+  lot.park();
+  lot.park();
+  lot.park();
+  lot.park();
+  return 0;
+}
+    </pre>
+  </div>
+
+  <div class="project">
+    <h2>🔹 Project: bMoney Calculator</h2>
+    <p>Overloaded operators for money handling.</p>
+    <pre>
+// Class using operator overloading for money
+#include &lt;iostream&gt;
+using namespace std;
+
+class bMoney {
+  double amount;
+public:
+  bMoney(double a = 0) : amount(a) {}
+  bMoney operator+(bMoney m) {
+    return bMoney(amount + m.amount);
+  }
+  void show() { cout &lt;&lt; "Amount: Rs. " &lt;&lt; amount &lt;&lt; endl; }
+};
+
+int main() {
+  bMoney m1(1500), m2(2000), m3;
+  m3 = m1 + m2;
+  m3.show();
+  return 0;
+}
+    </pre>
+  </div>
+
+</body>
+</html>
