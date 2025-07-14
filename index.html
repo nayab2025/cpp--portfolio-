@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>C++ Projects | Nayab</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nayab's C++ Programming Portfolio</title>
   <style>
-    body { font-family: Arial; background: #f7f7f7; padding: 20px; }
-    h1, h2 { color: #2d2d2d; }
-    .project { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    pre { background: #eee; padding: 10px; overflow-x: auto; border-radius: 8px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f4;
+      color: #333;
+    }
+    h1 {
+      color: #005f99;
+    }
+    .project {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+    a.download {
+      display: inline-block;
+      margin-top: 10px;
+      background: #005f99;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    a.download:hover {
+      background: #003f6b;
+    }
   </style>
 </head>
 <body>
-
-  <h1>👩‍💻 Nayab's C++ Programming Portfolio</h1>
+  <h1>Nayab's C++ Programming Portfolio</h1>
 
   <div class="project">
     <h2>🔹 Project: Smart Parking System</h2>
     <p>A program to manage parking slots using OOP in C++.</p>
-    <pre>
-#include &lt;iostream&gt;
+    <pre><code>#include &lt;iostream&gt;
 using namespace std;
 
 class Parking {
@@ -42,16 +71,14 @@ int main() {
   lot.park();
   lot.park();
   return 0;
-}
-    </pre>
+}</code></pre>
+    <a class="download" href="smart_parking_system.cpp" download>Download Source Code</a>
   </div>
 
   <div class="project">
     <h2>🔹 Project: bMoney Calculator</h2>
-    <p>Overloaded operators for money handling.</p>
-    <pre>
-// Class using operator overloading for money
-#include &lt;iostream&gt;
+    <p>Overloaded operators for money handling in C++.</p>
+    <pre><code>#include &lt;iostream&gt;
 using namespace std;
 
 class bMoney {
@@ -69,9 +96,8 @@ int main() {
   m3 = m1 + m2;
   m3.show();
   return 0;
-}
-    </pre>
+}</code></pre>
+    <a class="download" href="bmoney_calculator.cpp" download>Download Source Code</a>
   </div>
-
 </body>
 </html>
