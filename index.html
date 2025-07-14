@@ -101,3 +101,37 @@ int main() {
   </div>
 </body>
 </html>
+<div class="project">
+  <h2>🔹 Project: Simple Calculator</h2>
+  <p>Performs basic arithmetic operations using switch-case in C++.</p>
+  <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  double num1, num2;
+  char op;
+
+  cout &lt;&lt; "Enter first number: ";
+  cin &gt;&gt; num1;
+  cout &lt;&lt; "Enter operator (+, -, *, /): ";
+  cin &gt;&gt; op;
+  cout &lt;&lt; "Enter second number: ";
+  cin &gt;&gt; num2;
+
+  switch (op) {
+    case '+': cout &lt;&lt; "Result: " &lt;&lt; num1 + num2 &lt;&lt; endl; break;
+    case '-': cout &lt;&lt; "Result: " &lt;&lt; num1 - num2 &lt;&lt; endl; break;
+    case '*': cout &lt;&lt; "Result: " &lt;&lt; num1 * num2 &lt;&lt; endl; break;
+    case '/':
+      if (num2 != 0)
+        cout &lt;&lt; "Result: " &lt;&lt; num1 / num2 &lt;&lt; endl;
+      else
+        cout &lt;&lt; "Error: Division by zero!" &lt;&lt; endl;
+      break;
+    default: cout &lt;&lt; "Invalid operator!" &lt;&lt; endl;
+  }
+
+  return 0;
+}</code></pre>
+  <a class="download" href="simple_calculator.cpp" download>Download Source Code</a>
+</div>
