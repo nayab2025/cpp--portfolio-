@@ -172,5 +172,38 @@ int main() {
 }</code></pre>
   <a class="download" href="factorial_finder.cpp" download>Download Source Code</a>
 </div>
+  <div class="project">
+  <h2>🎯 Project: Number Guessing Game</h2>
+  <p>Fun game where the user tries to guess a randomly generated number between 1 and 100.</p>
+  <pre><code>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;ctime&gt;
+using namespace std;
+
+int main() {
+  srand(time(0));
+  int secret = rand() % 100 + 1;
+  int guess, tries = 0;
+
+  cout &lt;&lt; "🎯 Welcome to the Number Guessing Game!" &lt;&lt; endl;
+
+  do {
+    cout &lt;&lt; "Guess a number between 1 and 100: ";
+    cin &gt;&gt; guess;
+    tries++;
+
+    if (guess &lt; secret)
+      cout &lt;&lt; "Too low! Try again.\n";
+    else if (guess &gt; secret)
+      cout &lt;&lt; "Too high! Try again.\n";
+    else
+      cout &lt;&lt; "🎉 Correct! You guessed it in " &lt;&lt; tries &lt;&lt; " tries.\n";
+
+  } while (guess != secret);
+
+  return 0;
+}</code></pre>
+  <a class="download" href="number_guessing_game.cpp" download>Download Source Code</a>
+  </div>
 </body>
 </html>
