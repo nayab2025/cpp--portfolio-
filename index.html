@@ -208,5 +208,156 @@ int main() {
 }</code></pre>
   <a class="download" href="number_guessing_game.cpp" download>Download Source Code</a>
   </div>
+    <div class="project">
+  <h2>🏦 Project: Bank Management with Inheritance</h2>
+  <p>Uses base and derived classes to manage accounts.</p>
+  <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+class Account {
+protected:
+  string name;
+  int accNo;
+  double balance;
+public:
+  void input() {
+    cout &lt;&lt; "Name: "; cin &gt;&gt; name;
+    cout &lt;&lt; "Account No: "; cin &gt;&gt; accNo;
+    cout &lt;&lt; "Balance: "; cin &gt;&gt; balance;
+  }
+};
+
+class Savings : public Account {
+public:
+  void display() {
+    cout &lt;&lt; "Savings Account\nName: " &lt;&lt; name &lt;&lt; ", No: " &lt;&lt; accNo &lt;&lt; ", Balance: " &lt;&lt; balance;
+  }
+};
+
+int main() {
+  Savings s;
+  s.input();
+  s.display();
+  return 0;
+}</code></pre>
+  <a class="download" href="bank_inheritance.cpp" download>Download Source Code</a>
+    </div>
+    <div class="project">
+  <h2>🔐 Project: User Login System with Files</h2>
+  <p>Implements user registration and login using file I/O in C++.</p>
+  <pre><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+bool login(string user, string pass) {
+  ifstream file("users.txt");
+  string u, p;
+  while (file &gt;&gt; u &gt;&gt; p) {
+    if (u == user &amp;&amp; p == pass)
+      return true;
+  }
+  return false;
+}
+
+int main() {
+  int choice;
+  cout &lt;&lt; "1. Register\n2. Login\nChoice: ";
+  cin &gt;&gt; choice;
+
+  string user, pass;
+  cout &lt;&lt; "Username: ";
+  cin &gt;&gt; user;
+  cout &lt;&lt; "Password: ";
+  cin &gt;&gt; pass;
+
+  if (choice == 1) {
+    ofstream file("users.txt", ios::app);
+    file &lt;&lt; user &lt;&lt; " " &lt;&lt; pass &lt;&lt; endl;
+    cout &lt;&lt; "Registered successfully!";
+  } else {
+    if (login(user, pass))
+      cout &lt;&lt; "Login successful!";
+    else
+      cout &lt;&lt; "Invalid credentials!";
+  }
+  return 0;
+}</code></pre>
+  <a class="download" href="user_login_system.cpp" download>Download Source Code</a>
+    </div>
+    <div class="project">
+  <h2>🧮 Project: Matrix Class with Operator Overloading</h2>
+  <p>Adds two matrices using operator overloading.</p>
+  <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+class Matrix {
+  int a[2][2];
+public:
+  void input() {
+    cout &lt;&lt; "Enter 4 elements:\n";
+    for (int i=0;i&lt;2;i++)
+      for (int j=0;j&lt;2;j++)
+        cin &gt;&gt; a[i][j];
+  }
+  Matrix operator+(Matrix m) {
+    Matrix temp;
+    for (int i=0;i&lt;2;i++)
+      for (int j=0;j&lt;2;j++)
+        temp.a[i][j] = a[i][j] + m.a[i][j];
+    return temp;
+  }
+  void display() {
+    for (int i=0;i&lt;2;i++) {
+      for (int j=0;j&lt;2;j++)
+        cout &lt;&lt; a[i][j] &lt;&lt; " ";
+      cout &lt;&lt; endl;
+    }
+  }
+};
+
+int main() {
+  Matrix m1, m2, m3;
+  m1.input(); m2.input();
+  m3 = m1 + m2;
+  cout &lt;&lt; "Result:\n"; m3.display();
+  return 0;
+}</code></pre>
+  <a class="download" href="matrix_operator.cpp" download>Download Source Code</a>
+    </div>
+    <div class="project">
+  <h2>📚 Project: Library Management System</h2>
+  <p>Demonstrates class, vector, and file handling to manage book records.</p>
+  <pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+class Book {
+public:
+  string title, author;
+  int id;
+
+  void input() {
+    cout &lt;&lt; "ID: "; cin &gt;&gt; id;
+    cout &lt;&lt; "Title: "; cin.ignore(); getline(cin, title);
+    cout &lt;&lt; "Author: "; getline(cin, author);
+  }
+
+  void save() {
+    ofstream out("books.txt", ios::app);
+    out &lt;&lt; id &lt;&lt; "," &lt;&lt; title &lt;&lt; "," &lt;&lt; author &lt;&lt; "\n";
+  }
+};
+
+int main() {
+  Book b;
+  b.input();
+  b.save();
+  cout &lt;&lt; "Book saved!";
+  return 0;
+}</code></pre>
+  <a class="download" href="library_system.cpp" download>Download Source Code</a>
+    </div>
 </body>
 </html>
