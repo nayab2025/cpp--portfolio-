@@ -1,53 +1,75 @@
-# 🌟 C++ Programming Portfolio
 
-Welcome to my C++ project showcase! This portfolio features some of the most interesting and challenging C++ programs that demonstrate core concepts of Object-Oriented Programming, File Handling, Inheritance, Polymorphism, and more.
+# 🌟 My C++ Programming Portfolio
 
----
+Welcome to my personal C++ programming portfolio! This website showcases challenging and well-structured C++ projects that demonstrate core concepts such as object-oriented programming, file handling, inheritance, operator overloading, templates, and more.
 
-## 📁 Projects Included
-
-| # | Project Title | Concepts Used |
-|---|---------------|----------------|
-| 1️⃣ | **User Login System** | File I/O, Conditionals |
-| 2️⃣ | **Library Management** | Classes, Vectors, File Handling |
-| 3️⃣ | **Bank System** | Inheritance, Encapsulation |
-| 4️⃣ | **Matrix Addition** | Operator Overloading |
-| 5️⃣ | **Virtual Functions Example** | Runtime Polymorphism |
-| 6️⃣ | **Shape Area Calculator** | Abstract Classes |
-| 7️⃣ | **Binary File Student Record** | File I/O (Binary), Classes |
-| 8️⃣ | **Complex Number Operations** | Operator Overloading |
-| 9️⃣ | **Quiz Game** | Arrays, Loops, Score System |
-| 🔟 | **Number Guessing Game** | Loops, Random Numbers |
+🖥️ **Live Website**: [Visit my site here](https://nayab2025.github.io/cpp-portfolio)
 
 ---
 
-## 💡 How This Portfolio Helps Me
+## 📂 Featured Projects
 
-- ✅ Builds my C++ problem-solving skills
-- ✅ Shows my progress in core programming concepts
-- ✅ Helps others learn by example
-- ✅ Great for resumes and interviews
+### 🔐 User Login System with File Handling
+Implements a simple registration and login system using file I/O.
+[Source Code](user_login_system.cpp)
+
+### 📚 Library Management System
+Uses classes, vectors, and file handling to manage book records.
+[Source Code](library_system.cpp)
+
+### 🏦 Bank Management with Inheritance
+Demonstrates base and derived classes for account handling.
+[Source Code](bank_inheritance.cpp)
+
+### 🧮 Matrix Addition using Operator Overloading
+Adds two 2x2 matrices using operator overloading.
+[Source Code](matrix_operator.cpp)
+
+### 🎯 Number Guessing Game
+A console game using loops and random number generation.
+[Source Code](number_guessing_game.cpp)
+
+### 🔄 Reverse a String using Stack
+Demonstrates STL stack and string reversal logic.
+[Source Code](reverse_stack.cpp)
+
+### 📈 Simple ATM Simulator
+Simulates ATM transactions with class-based logic.
+[Source Code](atm_simulator.cpp)
+
+### 📊 Employee Record using Classes
+Stores and displays employee information using arrays of objects.
+[Source Code](employee_record.cpp)
+
+### 📇 Phone Directory using File I/O
+Adds and searches contacts using file handling techniques.
+[Source Code](phone_directory.cpp)
+
+### 🧮 Calculator using Switch and Functions
+Implements a basic calculator using switch-case and functions.
+[Source Code](calculator.cpp)
 
 ---
 
-## 🚀 Live Demo
+## 📁 How This Portfolio Helps Me
 
-Visit my portfolio website hosted with **GitHub Pages**:  
-➡️ [https://nayab2025.github.io/cpp-portfolio](https://nayab2025.github.io/cpp-portfolio)
+- ✅ Showcases my C++ coding skills to employers, teachers, and peers
+- ✅ Helps me revise major programming concepts
+- ✅ Acts as a live resume for project-based learning
+- ✅ Easy to share via GitHub link
 
 ---
 
-## 🧠 Technologies Used
+## 🛠️ Technologies Used
 
 - C++
-- HTML + CSS (for front-end portfolio site)
-- GitHub Pages for hosting
+- HTML & CSS (for GitHub Pages)
+- GitHub for version control and hosting
 
 ---
 
-## 🙌 Connect With Me
+## 📩 Contact
 
-If you like the project, give it a ⭐ and follow me for more:
-- GitHub: [@nayab2025](https://github.com/nayab2025)
+If you want to collaborate or give feedback, feel free to reach out to me via GitHub or my social links on the website.
 
 ---
