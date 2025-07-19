@@ -1,6 +1,6 @@
 
 # 🌟 My C++ Programming Portfolio
-
+[![GitHub stars](https://img.shields.io/github/stars/nayab2025/cpp--portfolio-?style=social)](https://github.com/nayab2025/cpp--portfolio-/stargazers)
 Welcome to my personal C++ programming portfolio! This website showcases challenging and well-structured C++ projects that demonstrate core concepts such as object-oriented programming, file handling, inheritance, operator overloading, templates, and more.
 
 🖥️ **Live Website**: [Visit my site here](https://nayab2025.github.io/cpp-portfolio)
